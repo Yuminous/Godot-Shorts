@@ -59,7 +59,7 @@ func _physics_process(delta):
 		
 	
 	# the method of flight here below is very crude, based simply on the camera rotation, but it can be tuned better so that players don't notice or don't mind.
-	# o método de voo aqui é muito rude, é simplesmente baseado na rotação da câmara, mas pode ser melhorado de modo a que os jogadores não se apercebam da diferença.
+	# o método de voo aqui é muito básico, é simplesmente baseado na rotação da câmara, mas pode ser melhorado de modo a que os jogadores não se apercebam da diferença.
 	
 	if Input.is_action_pressed("fly"):
 		gravity = false
@@ -110,4 +110,3 @@ func _on_Button3_pressed():
 	camera.set_translation(Vector3(0, 0.2, -0.4))
 	camera.rotation_degrees.x = -0
 	menu()
-	
