@@ -9,5 +9,5 @@ There is much room for improvement to be gained by extending the code.
 
 ## Screenshots
 
-![Screenshot](Screenshots/screenshot-1.jpg)
-![Screenshot](Screenshots/screenshot-2.jpg)
+![Screenshot](Screenshots/scrn-1.jpg)
+![Screenshot](Screenshots/scrn-2.jpg)
