@@ -144,6 +144,7 @@ shape = SubResource( 6 )
 
 [node name="MeshInstance" type="MeshInstance" parent="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 1.5, 0 )
+visible = false
 mesh = SubResource( 10 )
 material/0 = null
 
