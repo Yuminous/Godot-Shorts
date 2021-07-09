@@ -4,7 +4,8 @@
 [ext_resource path="res://Singleton.gd" type="Script" id=2]
 
 [sub_resource type="StyleBoxFlat" id=1]
-content_margin_top = 30.0
+content_margin_left = 75.0
+content_margin_top = 50.0
 bg_color = Color( 0.101961, 0.101961, 0.101961, 1 )
 
 [sub_resource type="DynamicFont" id=2]
@@ -76,18 +77,16 @@ margin_right = 207.0
 margin_bottom = 252.5
 custom_styles/normal = SubResource( 1 )
 custom_fonts/font = SubResource( 2 )
-text = "   <<<  PAUSE  >>>    
-
- Forward  =  W                
- Left  =  A                        
- Back  =  S                       
- Right  =  D                      
- Jump  =  Space             
-     Run / Glide  =  Shift (hold)
- Fly  =  Alt (hold)            
- Switch Camera  =  Tab 
- Pause Menu  =  Escape"
-align = 1
+text = "Forward  =  W                
+Left  =  A                        
+Back  =  S                       
+Right  =  D                      
+Jump  =  Space             
+Crouch / Walk = Control           
+Run / Glide  =  Shift (hold)
+Fly  =  Alt (hold)            
+Switch Camera  =  Tab 
+Pause Menu  =  Escape"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -140,7 +139,7 @@ __meta__ = {
 [node name="KinematicBody" type="KinematicBody" parent="."]
 
 [node name="CollisionShape" type="CollisionShape" parent="KinematicBody"]
-transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 1.5, 0 )
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.5, 0 )
 shape = SubResource( 6 )
 
 [node name="MeshInstance" type="MeshInstance" parent="KinematicBody"]
@@ -149,7 +148,7 @@ mesh = SubResource( 10 )
 material/0 = null
 
 [node name="Spatial" type="Spatial" parent="KinematicBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.47417, -0.0662749 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.47417, -0.0662751 )
 
 [node name="MeshInstance2" type="MeshInstance" parent="KinematicBody/Spatial"]
 transform = Transform( 0.7, 0, 0, 0, 0.699561, -0.0247837, 0, 0.0247837, 0.699561, 0, 0, 0 )
@@ -157,7 +156,7 @@ mesh = SubResource( 11 )
 material/0 = null
 
 [node name="MeshInstance3" type="MeshInstance" parent="KinematicBody/Spatial/MeshInstance2"]
-transform = Transform( 0.142857, 0, 0, 0, -0.285715, 8.41916e-07, 0, -1.1269e-07, -2.14286, 1.08486, -1.20885, -1.94854 )
+transform = Transform( 0.142857, 0, 0, 0, -0.285715, 7.7486e-07, 0, -1.04308e-07, -2.14286, 1.08486, -1.20885, -1.94854 )
 mesh = SubResource( 12 )
 material/0 = null
 
