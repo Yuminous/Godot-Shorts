@@ -70,10 +70,10 @@ func _physics_process(delta):
 		if Input.is_action_pressed("sprint"):
 			sprint_multiplier = 2
 			A = A * 1.5  # <<< climb rate is multiplied here while "sprinting" in the air to maintain flight attitude, again, modify the offset if need be
+		
+		
 		if Input.is_action_pressed("forward"):
 			player.move_and_slide(Vector3(0, A, 0), Vector3.UP)
-			
-			
 	elif Input.is_action_just_released("fly"):
 		gravity = true
 		sprint_multiplier = 1
