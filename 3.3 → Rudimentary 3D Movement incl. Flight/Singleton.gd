@@ -29,7 +29,6 @@ func menu():
 func _physics_process(delta):
 	if pause == true:
 		return
-		
 	if gravity == true:
 		player.move_and_slide(Vector3(0, max(vertical_movement, terminal_velocity), 0), Vector3.UP)
 	if player.is_on_floor() == true or player.is_on_wall() == true:
@@ -89,7 +88,6 @@ func _unhandled_input(event):
 	if event is InputEventMouseMotion and pause == false:
 		player.rotate_y(-event.relative.x/150)
 		player_head.rotation_degrees.x = clamp(player_head.rotation_degrees.x - event.relative.y/5, -70, 95)
-		
 	if event.is_action_pressed("pause"):
 		menu()
 
