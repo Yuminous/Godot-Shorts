@@ -10,8 +10,8 @@ config_version=4
 
 [application]
 
-config/name="Testing .004"
-run/main_scene="res://Single.tscn"
+config/name="Reinstancing Levels and 3D Physics Masks"
+run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
 [input]
