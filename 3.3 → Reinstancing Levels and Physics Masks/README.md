@@ -9,5 +9,5 @@ Adapted from the [`3D Movement Demo`](https://github.com/Yuminous/Godot-Shorts/t
 [`   Downgit   `](https://downgit.github.io/#/home?url=https://github.com/Yuminous/Godot-Shorts/tree/main/3.3%20%E2%86%92%20Reinstancing%20Levels%20and%20Physics%20Masks) [`  Download-Directory  `](https://github.com/Yuminous/Godot-Shorts/tree/main/3.3%20%E2%86%92%20Reinstancing%20Levels%20and%20Physics%20Masks)
 ## Screenshots
 
-![Screenshot](Screenshots/scrn-1.jpg)
+![Screenshot](Screenshots/scrn-1.gif)
 ![Screenshot](Screenshots/scrn-2.jpg)
