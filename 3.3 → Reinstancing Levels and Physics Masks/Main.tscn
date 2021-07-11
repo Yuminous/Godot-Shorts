@@ -1,24 +1,20 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://font.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Singleton.gd" type="Script" id=2]
 [ext_resource path="res://Spatial0.tscn" type="PackedScene" id=5]
 
-[sub_resource type="DynamicFont" id=13]
+[sub_resource type="DynamicFont" id=1]
 size = 60
 font_data = ExtResource( 1 )
 
-[sub_resource type="StyleBoxFlat" id=1]
+[sub_resource type="StyleBoxFlat" id=2]
 content_margin_left = 75.0
 content_margin_top = 30.0
 bg_color = Color( 0.101961, 0.101961, 0.101961, 1 )
 
-[sub_resource type="DynamicFont" id=2]
-size = 25
-font_data = ExtResource( 1 )
-
 [sub_resource type="DynamicFont" id=3]
-size = 20
+size = 25
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
@@ -29,27 +25,23 @@ font_data = ExtResource( 1 )
 size = 20
 font_data = ExtResource( 1 )
 
-[sub_resource type="CapsuleShape" id=6]
+[sub_resource type="DynamicFont" id=6]
+size = 20
+font_data = ExtResource( 1 )
 
-[sub_resource type="OpenSimplexNoise" id=7]
-octaves = 9
-period = 0.1
-persistence = 1.0
-lacunarity = 4.0
+[sub_resource type="CapsuleShape" id=7]
 
-[sub_resource type="NoiseTexture" id=8]
-bump_strength = 6.3
-noise = SubResource( 7 )
+[sub_resource type="SpatialMaterial" id=22]
+albedo_color = Color( 0.647059, 0.647059, 0.647059, 1 )
 
-[sub_resource type="SpatialMaterial" id=9]
-albedo_texture = SubResource( 8 )
+[sub_resource type="CapsuleMesh" id=11]
+material = SubResource( 22 )
 
-[sub_resource type="CapsuleMesh" id=10]
-material = SubResource( 9 )
+[sub_resource type="SphereMesh" id=12]
 
-[sub_resource type="SphereMesh" id=11]
+[sub_resource type="SpatialMaterial" id=23]
 
-[sub_resource type="PrismMesh" id=12]
+[sub_resource type="PrismMesh" id=13]
 
 [sub_resource type="BoxShape" id=14]
 
@@ -87,7 +79,7 @@ margin_left = -216.5
 margin_top = -166.413
 margin_right = 216.5
 margin_bottom = -65.4128
-custom_fonts/font = SubResource( 13 )
+custom_fonts/font = SubResource( 1 )
 text = "World Changed"
 align = 1
 __meta__ = {
@@ -103,8 +95,8 @@ margin_left = -206.0
 margin_top = -252.0
 margin_right = 263.0
 margin_bottom = 253.0
-custom_styles/normal = SubResource( 1 )
-custom_fonts/font = SubResource( 2 )
+custom_styles/normal = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 text = "Right Click = Change Worlds
 
 Left Click = Change Physics Layer
@@ -129,7 +121,7 @@ margin_left = -172.999
 margin_top = -64.0
 margin_right = -98.9989
 margin_bottom = -27.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "QUIT"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -144,7 +136,7 @@ margin_left = 39.0
 margin_top = -64.0
 margin_right = 175.0
 margin_bottom = -27.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "CLOSE"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -159,7 +151,7 @@ margin_left = -88.6646
 margin_top = -64.0757
 margin_right = 29.3354
 margin_bottom = -27.0757
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
 text = "RESET"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -170,12 +162,11 @@ collision_mask = 7
 
 [node name="CollisionShape" type="CollisionShape" parent="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1.5, 0 )
-shape = SubResource( 6 )
+shape = SubResource( 7 )
 
 [node name="MeshInstance" type="MeshInstance" parent="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 1.5, 0 )
-visible = false
-mesh = SubResource( 10 )
+mesh = SubResource( 11 )
 material/0 = null
 
 [node name="Spatial" type="Spatial" parent="KinematicBody"]
@@ -183,12 +174,12 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.47417, -0.0662751 )
 
 [node name="MeshInstance2" type="MeshInstance" parent="KinematicBody/Spatial"]
 transform = Transform( 0.7, 0, 0, 0, 0.699561, -0.0247837, 0, 0.0247837, 0.699561, 0, 0, 0 )
-mesh = SubResource( 11 )
-material/0 = null
+mesh = SubResource( 12 )
+material/0 = SubResource( 23 )
 
 [node name="MeshInstance3" type="MeshInstance" parent="KinematicBody/Spatial/MeshInstance2"]
 transform = Transform( 0.142857, 0, 0, 0, -0.285715, 7.7486e-07, 0, -1.04308e-07, -2.14286, 1.08486, -1.20885, -1.94854 )
-mesh = SubResource( 12 )
+mesh = SubResource( 13 )
 material/0 = null
 
 [node name="Camera" type="Camera" parent="KinematicBody/Spatial"]
