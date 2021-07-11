@@ -2,7 +2,7 @@
 
 ### Overview
 
-Adapted from the [`3D Movement Demo`](https://github.com/Yuminous/Godot-Shorts/tree/main/3.3%20%E2%86%92%20Rudimentary%203D%20Movement%20incl.%20Flight), this is a basic demonstration of level or world switching through the use of `queue_free()` (deletion) and re-instancing of scenes. It also provides a small example of how physics masks can change hwo the player interacts with the environment.
+Adapted from the [`3D Movement Demo`](https://github.com/Yuminous/Godot-Shorts/tree/main/3.3%20%E2%86%92%20Rudimentary%203D%20Movement%20incl.%20Flight), this is a basic demonstration of level or world switching through the use of `queue_free()` (deletion) and re-instancing of scenes. It also provides a small example of how physics masks can change how the player interacts with the environment.
 
 
 ### Download
