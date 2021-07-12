@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="Testing .004"
+config/name="Basic 3D Movement including Flight"
 run/main_scene="res://Single.tscn"
 config/icon="res://icon.png"
 
