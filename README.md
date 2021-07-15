@@ -1,6 +1,6 @@
 # Godot Short Projects
 ### Overview
-Demo Godot projects, examples, or other shorts that may perhaps be of use to someone.  
+Demo Godot projects, examples, or other shorts usually from QA that may perhaps be of use to someone.  
 
 ### Projects
 #### Version 3.3
