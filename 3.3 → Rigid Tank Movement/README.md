@@ -2,7 +2,7 @@
 
 ### Overview
 
-A demonstration of [`tank-like movement`](https://godotengine.org/qa/110889/cannot-get-tank-control-system-to-work) where the vehicle will accelerate in the direction it's facing, rather than where the player points.
+A demonstration of [`tank-like`](https://godotengine.org/qa/110889/cannot-get-tank-control-system-to-work) movement where the vehicle will accelerate in the direction it's facing, rather than where the player points.
 
 
 ### Download
