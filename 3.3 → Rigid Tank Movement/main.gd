@@ -30,11 +30,10 @@ func _ready() -> void:
 
 
 func _physics_process(delta) -> void:
-	var m = menu.modulate.a
 	if pause:
-		menu.modulate.a = min(m + 0.03, 1)
+		menu.modulate.a = min(menu.modulate.a + 0.03, 1)
 		return
-	menu.modulate.a = max(m - 0.1, 0)
+	menu.modulate.a = max(menu.modulate.a - 0.1, 0)
 	
 	camera_dolly.translation = tank.translation + Vector3(0, 2, 0)
 	turret.rotation.y = lerp_angle(turret.rotation.y, camera_dolly.rotation.y, turret_slew_acceleration)
