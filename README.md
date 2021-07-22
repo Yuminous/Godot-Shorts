@@ -3,10 +3,10 @@
 Demo Godot projects, examples, or other shorts (usually from QA) that may perhaps be of use to someone.  
 
 ### Projects
-#### Version 3.3 (4.0 ready)
+#### Version 3.3
 → [`3D Rigid Body Tank Movement`](https://github.com/Yuminous/Godot-Shorts/tree/main/3.3%20%E2%86%92%20Rigid%20Tank%20Movement)  
 → [`Download`](https://github.com/Yuminous/Godot-Shorts/raw/main/ZIP/3.3-RigidTankMovement.zip)
-#### Version 3.3
+
 → [`Reinstancing Level Scenes and Physics Masks`](https://github.com/Yuminous/Godot-Shorts/tree/main/3.3%20%E2%86%92%20Reinstancing%20Levels%20and%20Physics%20Masks)  
 → [`Download`](https://github.com/Yuminous/Godot-Shorts/raw/main/ZIP/3.3-ReinstancingLevelScenes-PhysicsMasks.zip)
 
